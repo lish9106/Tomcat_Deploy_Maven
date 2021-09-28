@@ -4,8 +4,22 @@ stages {
     stage('Clone') {
         steps {
             echo 'Cloning the code..'
-            git 'https://github.com/lish9106/Tomcat_Deploy_Maven.git'
+            git 'https://github.com/PareshSwain/DeploytoTomcatPlugin.git'
         }
+    }
+    stage ('Compile Stage'){
+            steps{
+                withMaven(maven:'maven3.8.2'){
+                sh 'mvn clean compile'
+                }
+            }
+    }
+    stage ('Build Stage'){
+            steps{
+                withMaven(maven:'maven3.8.2'){
+                sh 'mvn package'
+                }
+            }    
     }
 }
 }
