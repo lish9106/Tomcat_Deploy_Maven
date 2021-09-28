@@ -1,0 +1,13 @@
+pipeline {
+agent { label 'J-slave-1' } 
+def tomcatWeb = 'D:\\Auto_deployment\\apache-tomcat-9.0.30\\apache-tomcat-9.0.30\\webapps'
+def tomcatBin = 'D:\\Auto_deployment\\apache-tomcat-9.0.30\\apache-tomcat-9.0.30\\bin'
+def tomcatStatus = ''
+stages {
+    stage('SCM Checkout'){
+        steps {
+            git 'https://github.com/sivajavatechie/JenkinsWar.git'
+        }
+    }
+}
+}
