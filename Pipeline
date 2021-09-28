@@ -4,7 +4,7 @@ stages {
     stage('Clone') {
         steps {
             echo 'Cloning the code..'
-            git 'https://github.com/PareshSwain/DeploytoTomcatPlugin.git'
+            git 'https://github.com/lish9106/Tomcat_Deploy_Maven.git'
         }
     }
 }
