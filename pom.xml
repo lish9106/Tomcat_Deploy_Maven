@@ -4,7 +4,6 @@
 
     <groupId>com.affy</groupId>
     <artifactId>simplemavenproject</artifactId>
-    <version>snapshotT</version>
     <packaging>jar</packaging>
 
     <name>SimpleMavenProject</name>
