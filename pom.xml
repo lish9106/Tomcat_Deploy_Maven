@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.affy</groupId>
-    <artifactId>SimpleMavenProject</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>simplemavenproject</artifactId>
+    <version>snapshotT</version>
     <packaging>jar</packaging>
 
     <name>SimpleMavenProject</name>
